@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terima Kasih!</title>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      background: url("https://i.imgur.com/dbVhaCI.jpeg") no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      image-rendering: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .container {
+      background: linear-gradient(135deg, rgba(139, 30, 63, 0.85), rgba(211, 211, 211, 0.85));
+      padding: 35px 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      max-width: 720px;
+      width: 92%;
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    dotlottie-wc {
+      display: block;
+      margin: 0 auto 25px;
+      width: 320px;
+      height: 320px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 30px;
+      margin: 10px 0 15px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      color: #f1f1f1;
+      font-size: 17px;
+      margin: 12px 18px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #5d001e;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #3a0014;
+    }
+
+    @media (max-width: 600px) {
+      dotlottie-wc {
+        width: 240px;
+        height: 240px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <dotlottie-wc 
+      src="https://lottie.host/789e387c-e5af-42fc-84b2-1f3f5632908b/Q16zcz1exl.lottie" 
+      autoplay loop speed="1">
+    </dotlottie-wc>
+
+    <h1>Terima Kasih!</h1>
+    <p>Formulir Anda telah berhasil dikirim dan sudah kami terima.</p>
+    <p><em>"AI akan terus berkembang, tapi kendali etika tetap di tangan manusia. Jangan biarkan teknologi berpikir untukmu—gunakan ia untuk berpikir lebih dalam."</em></p>
+    <a href="https://example.com" class="btn">Kembali ke Beranda</a>
+  </div>
+</body>
+</html>
