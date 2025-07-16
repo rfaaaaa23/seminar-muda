@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pendaftaran Seminar</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      background: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #800000; /* warna maroon */
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 600;
+      color: #4d0d0d;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccd6dd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 20px;
+      margin-top: 5px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    .form-buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"] {
+      background-color: #800000;
+      color: white;
+    }
+
+    input[type="reset"] {
+      background-color: #a94442;
+      color: white;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Formulir Pendaftaran Seminar</h1>
+    <form action="https://formsubmit.co/ahilang833@gmail.com" method="POST">
+      <!-- Konfigurasi FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Pendaftaran Seminar Baru">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://rfaaaaa23.github.io/redirect/terimakasih.html">
+      <!-- Ganti URL jika halaman redirect di tempat lain -->
+
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="Nama Lengkap" placeholder="Masukkan nama lengkap" required>
+
+      <label for="alamat">Alamat Rumah:</label>
+      <input type="text" id="alamat" name="Alamat Rumah" placeholder="Masukkan alamat rumah" required>
+
+      <label for="tanggal_lahir">Tanggal Lahir:</label>
+      <input type="date" id="tanggal_lahir" name="Tanggal Lahir" required>
+
+      <label>Jenis Kelamin:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="Jenis Kelamin" value="Laki-Laki" required> Laki-Laki</label>
+        <label><input type="radio" name="Jenis Kelamin" value="Perempuan"> Perempuan</label>
+      </div>
+
+      <label for="sekolah">Asal Sekolah/Kampus:</label>
+      <input type="text" id="sekolah" name="Asal Sekolah/Kampus" placeholder="Nama sekolah atau kampus" required>
+
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="Nomor Telepon" placeholder="08xxxxxxxxxx" pattern="[0-9]{10,13}" required>
+
+      <label for="email">Email Aktif:</label>
+      <input type="email" id="email" name="Email Aktif" placeholder="ahilang833@gmail.com" required>
+
+      <div class="form-buttons">
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Bersihkan">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
